@@ -1,5 +1,4 @@
 /*! tailwindcss v4.3.1 | MIT License | https://tailwindcss.com */
-@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -7,12 +6,13 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-400: oklch(70.4% 0.191 22.216);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
-    --font-weight-bold: 700;
+    --spacing: 0.25rem;
+    --radius-xl: 0.75rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-logo: 'Leckerli One', sans-serif;
+    --font-body: 'Open Sans',sans-serif;
+    --color-pink: #FF598B;
   }
 }
 @layer base {
@@ -164,58 +164,90 @@
   }
 }
 @layer utilities {
-  .table {
-    display: table;
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .box-border {
+    box-sizing: border-box;
   }
-  .resize {
-    resize: both;
+  .flex {
+    display: flex;
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
+  .grid {
+    display: grid;
   }
-  .bg-red-400 {
-    background-color: var(--color-red-400);
+  .h-full {
+    height: 100%;
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  .h-screen {
+    height: 100vh;
   }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
+  .w-8 {
+    width: calc(var(--spacing) * 8);
   }
-  .underline {
-    text-decoration-line: underline;
+  .w-full {
+    width: 100%;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
-    *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
-      --tw-font-weight: initial;
-      --tw-outline-style: solid;
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .bg-\[var\(--shape-background\)\] {
+    background-color: var(--shape-background);
+  }
+  .bg-\[var\(--shape-body\)\] {
+    background-color: var(--shape-body);
+  }
+  .bg-\[url\(\'\.\.\/assets\/Background\.png\'\)\] {
+    background-image: url('../assets/Background.png');
+  }
+  .bg-contain {
+    background-size: contain;
+  }
+  .bg-bottom {
+    background-position: bottom;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+  .font-logo {
+    font-family: var(--font-logo);
+  }
+  .text-\[1rem\] {
+    font-size: 1rem;
+  }
+  .text-\[2\.5rem\] {
+    font-size: 2.5rem;
+  }
+  .text-pink {
+    color: var(--color-pink);
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 }
