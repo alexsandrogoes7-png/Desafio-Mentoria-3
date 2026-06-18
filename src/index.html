@@ -37,7 +37,7 @@
 
 
             <main class="">
-                <div class="flex flex-col mx-auto p-6 bg-shape-body h-auto md:h-screen md:overflow-y-auto md:p-20"> 
+                <div class="flex flex-col mx-auto p-6 bg-shape-body h-auto md:h-screen md:overflow-y-auto md:px-40 md:py-20"> 
 
                     <h1 class="flex font-heading font-extrabold text-3xl text-[var(--color-text-heading)] py-0 md:px-20 mb-10">Crie seu convite</h1>
 
@@ -54,19 +54,19 @@
 
                                 <h3 class=>Título</h3>
 
-                                <input id="event-name" type="text" placeholder="Nome do evento" class="appearance-none">
+                                <input id="event-name" type="text" placeholder="Nome do evento" class="appearance-none  placeholder:text-input-placeholder">
 
                             </div>
 
                             <div class="flex flex-col md:flex-row md:gap-4 shrink">
                                 <div class="w-full">
                                     <h3>Início</h3>
-                                    <input class= "" type="date" placeholder=", --:--">
+                                    <input class= "[&::-webkit-calendar-picker-indicator]:hidden [&::-moz-calendar-picker-indicator]:hidden" type="date" placeholder=", --:--">
                                 </div>
                                 
                                 <div class="w-full">
                                     <h3>Fim</h3>
-                                    <input class="" type="date" placeholder=", --:--">
+                                    <input class="[&::-webkit-calendar-picker-indicator]:hidden [&::-moz-calendar-picker-indicator]:hidden" type="date" placeholder=", --:--">
                                 </div>
                             </div>
 
@@ -119,10 +119,10 @@
 
                                 </div>
 
-                            <div class="text-area-wrapper">
+                            <div class="flex flex-col mb-12">
                                 <h3>Descrição</h3>
                                 <textarea 
-                                class="appearance-none"
+                                class="appearance-none placeholder:text-input-placeholder "
                                 name="decription" id="decription" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
                             </div>
                         </fieldset>
@@ -133,54 +133,54 @@
                                 
                                 <section class="container-main">
 
-                                    <div class="event-wrapper">
+                                    <div class="flex gap-3 mb-6">
                                         <img src="/assets/icons/paintbrush-vertical.svg" alt="pincel">
-                                        <h2>Personalização</h2>
+                                        <h2 class="font-heading text-text-heading font-extrabold text-[1.125rem] leading-[1.4]">Personalização</h2>
                                     </div>    
 
                                     <h3>Cor principal</h3>
-                                    <div class="colors-wrapper">
+                                    <div class="flex flex-col gap-4">
                                         
-                                        <div class="list-colors">
+                                        <div class="flex gap-8">
 
                                         <label for="Azul" class="radio-wrapper blue-radio">
-                                            <input name="color" id="Azul" type="radio"/>
+                                            <input class="input-radio" name="color" id="Azul" type="radio"/>
                                         </label>
 
                                         <label for="Vermelho" class="radio-wrapper red-radio">
-                                            <input name="color" id="Vermelho" type="radio"/>
+                                            <input class="input-radio" name="color" id="Vermelho" type="radio"/>
                                         </label>
 
                                         <label for="Laranja" class="radio-wrapper orange-radio">
-                                            <input name="color" id="Laranja" type="radio"/>
+                                            <input class="input-radio" name="color" id="Laranja" type="radio"/>
                                         </label>
 
                                         <label for="Azul escuro" class="radio-wrapper navy-radio">
-                                            <input name="color" id="Azul escuro" type="radio"/>
+                                            <input class="input-radio" name="color" id="Azul escuro" type="radio"/>
                                         </label>
 
                                         <label for="Roxo" class="radio-wrapper purple-radio">
-                                            <input name="color" id="Roxo" type="radio"/>
+                                            <input class="input-radio" name="color" id="Roxo" type="radio"/>
                                         </label>
 
                                         <label for="Rosa" class="radio-wrapper pink-radio">
-                                            <input name="color" id="Rosa" type="radio"/>
+                                            <input class="input-radio" name="color" id="Rosa" type="radio"/>
                                         </label>
 
                                         <label for="Amarelo" class="radio-wrapper yellow-radio">
-                                            <input name="color" id="Amarelo" type="radio"/>
+                                            <input class="input-radio" name="color" id="Amarelo" type="radio"/>
                                         </label>
 
                                         <label for="Lima" class="radio-wrapper lime-radio">
-                                            <input name="color" id="Lima" type="radio"/>
+                                            <input class="input-radio" name="color" id="Lima" type="radio"/>
                                         </label>
 
                                         <label for="Lima" class="radio-wrapper green-radio">
-                                            <input name="color" id="Lima" type="radio"/>
+                                            <input class="input-radio" name="color" id="Lima" type="radio"/>
                                         </label>
 
                                         <label for="Ciano" class="radio-wrapper cyan-radio">
-                                            <input class="appearance-none" name="color" id="Ciano" type="radio"/>
+                                            <input class="input-radio" name="color" id="Ciano" type="radio"/>
                                         </label>
 
                                         </div>

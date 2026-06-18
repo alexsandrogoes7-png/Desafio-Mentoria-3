@@ -12,7 +12,7 @@
   --color-brand-mid: #3487CF;
   --color-brand-dark: #1D6FB6;
 
-  /* Accent Colors */
+  
   --color-purple: #B259FF;
   --color-fuschia: #FF59F9;
   --color-pink: #FF598B;
@@ -23,21 +23,21 @@
   --color-cyan: #59FFF9;
   --color-navy: #6A59FF;
 
-  /* Feedback */
+
   --color-danger: #FF5959;
 
-  /* Input */
+
   --color-input-base: #1C1F21;
   --color-input-stroke: #363B40;
   --color-input-placeholder: #869198;
 
-  /* Shape */
+
   --color-shape-background: #131516;
   --color-shape-body: #212427;
   --color-shape-button: #2D3136;
   --color-shape-hover: #383D42;
 
-  /* Text */
+
   --color-text-body: #C8CDD0;
   --color-text-heading: #F9F9F9;
 }
@@ -54,17 +54,14 @@ h3{
 input,textarea,select{
 
  
-  @apply flex w-full shrink appearance-none;
+  @apply flex w-full shrink appearance-none rounded-lg border border-transparent outline outline-input-stroke p-3 px-4 text-input-placeholder bg-input-base font-body font-normal text-base leading-[1.4] placeholder:text-input-placeholder; 
+}
+
+.radio-wrapper{
+  @apply flex gap-2;
+}
 
 
-  border-radius: 0.5rem;
-  border: 1px solid transparent;
-  outline: 1px solid var(--color-input-stroke);
-  padding: 0.75rem 1rem;
-  color: var(--color-input-stroke);
-  background-color: var(--color-input-base);
-  font: var(--font-body);
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.4;
+.input-radio{
+ @apply cursor-pointer appearance-none bg-current w-[2.5rem] h-[2.5rem] m-0 border-4 border-shape-button rounded-full;
 }
