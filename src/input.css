@@ -36,6 +36,7 @@
   --color-shape-body: #212427;
   --color-shape-button: #2D3136;
   --color-shape-hover: #383D42;
+  --color-shape-input:#2D3136;
 
 
   --color-text-body: #C8CDD0;
@@ -131,3 +132,38 @@ input[type="file"]{
 #theme-switch:checked + .switch .slider{
   @apply translate-x-8 bg-text-heading
 }
+
+.terms{
+  @apply flex gap-3 items-start;
+
+  label{
+    @apply font-body text-sm font-normal;
+    
+
+    span{
+      @apply font-body text-sm font-bold text-brand-light; 
+    }
+  }
+}
+
+.checkbox{
+  @apply relative;
+
+  & input[type="checkbox"]{
+    @apply appearance-none absolute inset-0 m-0 p-0 cursor-pointer;
+  }
+
+  .checkbox-image {
+    @apply shrink-0 w-5 h-5;
+    background-image: url(/assets/icons/box-default.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+  &:has(:checked) .checkbox-image {
+    background-image: url(/assets/icons/box-hover.svg);
+  }
+}
+
+
