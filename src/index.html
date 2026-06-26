@@ -75,31 +75,31 @@
                                 <div class="md:flex  md:flex-row md:gap-4 ">
 
                                     
-                                     <div class="grid gap-2">
-					<span class="text-md text-body">Tipo</span>
+                    <div class="grid gap-2">
+					    <span class="text-md text-body">Tipo</span>
 					
 
-					 <div class="flex w-full max-w-[270px] gap-0.5 rounded-md border border-input-stroke bg-input-base p-1">
+                            <div class="flex w-full max-w-[270px] gap-0.5 rounded-md border border-input-stroke bg-input-base p-1">
 
-						   <div class="flex w-full justify-center gap-2 rounded-md bg-shape-button p-2">
-							<svg class="text-brand-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24" 							viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 										stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2-icon 								lucide-building-2">
-            						<path d="M10 12h4" />
-            						<path d="M10 8h4" />
-            						<path d="M14 21v-3a2 2 0 0 0-4 0v3" />
-           						<path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" />
-            						<path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" />
-          						</svg>
-						      <span class="font-semibold text-heading">Presencial</span>	
-						   </div>
+                                <button type="button" class="flex w-full justify-center cursor-pointer gap-2 rounded-md bg-shape-button p-2" id="btn-presencial" onclick="botãoaitvo('presencial')">
+                                    <svg id="icon-presencial" class="text-brand-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2-icon lucide-building-2">
+                                            <path d="M10 12h4" />
+                                            <path d="M10 8h4" />
+                                            <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
+                                        <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" />
+                                            <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" />
+                                    </svg>
+                                    <span class="font-semibold text-heading" id="txt-presencial">Presencial</span>	
+                                    </button>
 
-						   <div class="flex w-full justify-center gap-2 p-2">
-							<svg class="text-input-placeholder" xmlns="http://www.w3.org/2000/svg" width="24" 								height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 								stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video-icon 									lucide-video">
-            						<path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
-            						<rect x="2" y="6" width="14" height="12" rx="2" />
-          						</svg>
-							<span class="font-normal text-body">Online</span>	
-						   </div>		
-					 </div>
+                                <button type="button" id="btn-online" class="flex w-full justify-center gap-2 p-2 cursor-pointer rounded-md" onclick="botãoaitvo('online')">
+                                        <svg id="icon-online" class="text-input-placeholder" xmlns="http://www.w3.org/2000/svg" width="24"height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"stroke-linecap="round" stroke-linejoin="round"class="lucide lucide-video-icon lucide-video">
+                                                <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
+                                                <rect x="2" y="6" width="14" height="12" rx="2" />
+                                        </svg>
+                                        <span class="font-normal text-body" id="txt-online">Online</span>	
+                                </button>		
+                            </div>
 				      </div>
                                     
 
@@ -150,7 +150,7 @@
                                                 </label>
                                            </div>
 					
-				           <div class="grid md:flex md:flex-row gap-8 justify-center items-center">	
+				                            <div class="grid md:flex md:flex-row gap-8 justify-center items-center">	
                                                 <label for="Laranja" class="radio-wrapper orange-radio text-orange">
                                                     <input class="input-radio" name="color" id="Laranja" type="radio"/>
                                                 </label>
@@ -162,7 +162,7 @@
                                            </div>
 
 
-				           <div class="grid md:flex md:flex-row gap-8 justify-center items-center">	
+				                            <div class="grid md:flex md:flex-row gap-8 justify-center items-center">	
                                                 <label for="Roxo" class="radio-wrapper purple-radio text-purple">
                                                     <input class="input-radio" name="color" id="Roxo" type="radio"/>
                                                 </label>
@@ -172,7 +172,7 @@
                                                 </label>
                                             </div>    
 
-				           <div class="grid md:flex md:flex-row gap-8 justify-center items-center">	
+				                            <div class="grid md:flex md:flex-row gap-8 justify-center items-center">	
                                                 <label for="Amarelo" class="radio-wrapper yellow-radio text-yellow">
                                                     <input class="input-radio" name="color" id="Amarelo" type="radio"/>
                                                 </label>
@@ -183,7 +183,7 @@
                                             </div>    
 
 
-				           <div class="grid md:flex md:flex-row gap-8 justify-center items-center">	
+				                            <div class="grid md:flex md:flex-row gap-8 justify-center items-center">	
                                                 <label for="Verde" class="radio-wrapper green-radio text-green">
                                                     <input class="input-radio" name="color" id="Verde" type="radio"/>
                                                 </label>
@@ -381,5 +381,54 @@
                 </div>     
             </main>
         </div>
+
+        <script>
+            function botãoaitvo(tipo){
+                const btn_presencial = document.getElementById('btn-presencial')
+                const icon_presencial = document.getElementById('icon-presencial')
+                const txt_presencial = document.getElementById('txt-presencial')
+
+                const btn_online = document.getElementById('btn-online')
+                const icon_online = document.getElementById('icon-online')
+                const txt_online = document.getElementById('txt-online')
+
+
+                if(tipo === 'online'){
+                    btn_online.classList.add('bg-shape-button');
+
+                    icon_online.classList.remove('text-input-placeholder');
+                    icon_online.classList.add('text-brand-light');
+
+                    // txt_online.classList.remove('font-normal','text-body');
+                    txt_online.classList.add('font-semibold','text-heading');
+
+
+                    btn_presencial.classList.remove('bg-shape-button');
+                    // icon_presencial.classList.remove('text-brand-light');
+                    icon_presencial.classList.add('text-input-placeholder');
+
+                    txt_presencial.classList.remove('font-semibold');
+                    txt_presencial.classList.add('font-normal','text-body');
+                    
+                } else {
+                    btn_presencial.classList.add('bg-shape-button');
+
+                    icon_presencial.classList.remove('text-input-placeholder');
+                    icon_presencial.classList.add('text-brand-light');
+
+                    // txt_presencial.classList.remove('font-normal','text-body');
+                    txt_presencial.classList.add('font-semibold','text-heading');
+                    
+
+                    btn_online.classList.remove('bg-shape-button');
+                    
+                    icon_online.classList.remove('text-brand-light');
+                    icon_online.classList.add('text-input-placeholder');
+
+                    txt_online.classList.remove('font-semibold');
+                    txt_online.classList.add('font-normal','text-body');
+                }
+            }
+        </script>
 </body>
 </html>
