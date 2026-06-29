@@ -81,7 +81,7 @@
 
                             <div class="flex w-full gap-0.5 rounded-md border border-input-stroke bg-input-base p-1">
 
-                                <button type="button" class="flex w-full justify-center cursor-pointer gap-2 rounded-md bg-shape-button p-2" id="btn-presencial" onclick="botãoativo('presencial')">
+                                <button type="button" class="flex w-full justify-center cursor-pointer gap-2 rounded-md bg-shape-button p-2" id="btn-presencial" onclick="botaoativo('presencial')">
                                     <svg id="icon-presencial" class="text-brand-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2-icon lucide-building-2">
                                             <path d="M10 12h4" />
                                             <path d="M10 8h4" />
@@ -92,7 +92,7 @@
                                     <span class="font-semibold text-heading" id="txt-presencial">Presencial</span>	
                                     </button>
 
-                                <button type="button" id="btn-online" class="flex w-full justify-center gap-2 p-2 cursor-pointer rounded-md" onclick="botãoativo('online')">
+                                <button type="button" id="btn-online" class="flex w-full justify-center gap-2 p-2 cursor-pointer rounded-md" onclick="botaoativo('online')">
                                         <svg id="icon-online" class="text-input-placeholder" xmlns="http://www.w3.org/2000/svg" width="24"height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"stroke-linecap="round" stroke-linejoin="round"class="lucide lucide-video-icon lucide-video">
                                                 <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
                                                 <rect x="2" y="6" width="14" height="12" rx="2" />
@@ -383,7 +383,7 @@
         </div>
 
         <script>
-            function botãoativo(tipo){
+            function botaoativo(tipo){
                 const btn_presencial = document.getElementById('btn-presencial')
                 const icon_presencial = document.getElementById('icon-presencial')
                 const txt_presencial = document.getElementById('txt-presencial')
@@ -396,11 +396,12 @@
                 if(tipo === 'online'){
                     btn_online.classList.add('bg-shape-button');
 
-                    icon_online.classList.remove('text-input-placeholder');
-                    icon_online.classList.add('text-brand-light');
+                    // icon_online.classList.remove('text-input-placeholder');
+                    // icon_online.classList.add('text-brand-light');
+                    icon_online.classList.replace('text-input-placeholder','text-brand-light');
 
                     // txt_online.classList.remove('font-normal','text-body');
-                    txt_online.classList.add('font-semibold','text-heading');
+                    txt_online.classList.add('font-semibold text-heading');
 
 
                     btn_presencial.classList.remove('bg-shape-button');
