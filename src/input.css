@@ -55,7 +55,7 @@ h3{
 
 input,textarea,select{
 
- 
+  
   @apply flex w-full shrink appearance-none rounded-lg border border-transparent outline outline-input-stroke p-3 px-4  bg-input-base font-body  font-normal text-base leading-[1.4] placeholder:text-input-placeholder; 
 }
 
